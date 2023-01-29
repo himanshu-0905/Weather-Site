@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>Weather Website</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="top">Weather Website</h1>
+        <div class="left" id="lft">
+            <div class="weather-info">
+                <h1 > <span id="temp"></span></h1>
+                    <div class="city">
+                        <h2 id="city"></h2>
+                    </div>
+                <div class="description" id="des">
+                    <h3 id="description"></h3>
+                    <img src="" alt="" id="pic">
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <input type="text" placeholder="Enter the city..." id="inputTxt">
+            <button onclick="search()" id="btn"><i class="bi bi-search"></i></button>
+
+            <div class="right-bottom">
+                <h2>Weather Details</h2>
+                <ul>
+                    <li> Country:- <span id="country"></span></li>
+                    <li> Wind Speed :- <span id="wind"></span></li>
+                    <li> Humidity :- <span id="humidity"></span></li> 
+                    <li> pressure :- <span id="pressure"></span></li>
+                    <li> Visiblity :- <span id="visible"></span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
